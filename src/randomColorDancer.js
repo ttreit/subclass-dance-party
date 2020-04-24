@@ -5,7 +5,7 @@ var RandomColorDancer = function(top, left, timeBetweenSteps) {
 
 RandomColorDancer.prototype = Object.create(Dancer.prototype);
 RandomColorDancer.prototype.constructor = RandomColorDancer;
-RandomColorDancer.prototype.colors = ['aqua', 'blue', 'yellow', 'purple', 'green'];
+RandomColorDancer.prototype.colors = ['aqua', 'blue', 'yellow', 'purple', 'green', 'white'];
 RandomColorDancer.prototype.randomColor = function() {
   var index = Math.floor(Math.random() * (this.colors.length));
   let color = this.colors[index];
