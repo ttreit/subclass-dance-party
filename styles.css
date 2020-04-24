@@ -25,3 +25,9 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.covidDancer{
+  height: 60px;
+  width: 75px;
+  position:absolute;
+}
