@@ -36,7 +36,7 @@ $(document).ready(function() {
       for (var i = 0; i < window.dancers.length; i++) {
         var dancer = window.dancers[i];
         if (parseInt (dancer.$node.css('left')) > yPosition) {
-          dancer.$node.css('left', '-=1');
+          dancer.$node.css('left', '-=1d');
         }
       }
     };
