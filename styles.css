@@ -28,6 +28,10 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
+.dance, .lineUp {
+  padding-left: 15px;
+}
+
 .covidDancer{
   height: 60px;
   width: 75px;
