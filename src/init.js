@@ -31,16 +31,19 @@ $(document).ready(function() {
     window.dancers.push(dancer);
   });
   $('.lineUp').on('click', function(event) {
-    var yPosition = '0px';
+    var yPosition = 0;
     var move = function() {
       for (var i = 0; i < window.dancers.length; i++) {
         var dancer = window.dancers[i];
-        if (dancer.$node.css('left') !== yPosition) {
-          dancer.$node.css('left', '-=5');
+        if (parseInt (dancer.$node.css('left')) > yPosition) {
+          dancer.$node.css('left', '-=1');
         }
       }
     };
-    setInterval(move, 1);
+    setInterval(move, Math.random());
+    setInterval(move, Math.random());
+    setInterval(move, Math.random());
+    setInterval(move, Math.random());
+    setInterval(move, Math.random());
   });
 });
-
